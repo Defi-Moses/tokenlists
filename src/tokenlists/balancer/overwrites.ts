@@ -2,7 +2,7 @@
 import { Network, OverwritesForList } from '../../types'
 
 export const overwrites: OverwritesForList = {
-  [Network.Mainnet]: {
+  [Network.Ethereum]: {
     '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2': {
       name: 'Wrapped Ether',
     },
@@ -65,6 +65,31 @@ export const overwrites: OverwritesForList = {
       decimals: 18,
       symbol: 'ankrETH',
       name: 'Ankr Staked ETH',
+    },
+    '0x9559Aaa82d9649C7A7b220E7c461d2E74c9a3593': {
+      decimals: 18,
+      symbol: 'staFi rETH',
+      name: 'staFi rETH',
+    },
+    '0xEb91861f8A4e1C12333F42DCE8fB0Ecdc28dA716': {
+      decimals: 18,
+      symbol: 'eUSDC',
+      name: 'Euler Pool: USD Coin',
+    },
+    '0x4d19F33948b99800B6113Ff3e83beC9b537C85d2': {
+      decimals: 18,
+      symbol: 'eUSDT',
+      name: 'Euler Pool: Tether USD',
+    },
+    '0xe025E3ca2bE02316033184551D4d3Aa22024D9DC': {
+      decimals: 18,
+      symbol: 'eDAI',
+      name: 'Euler Pool: Dai Stablecoin',
+    },
+    '0xa2E3356610840701BDf5611a53974510Ae27E2e1': {
+      decimals: 18,
+      symbol: 'wBETH',
+      name: 'Wrapped Beacon ETH',
     },
   },
   [Network.Goerli]: {
@@ -266,7 +291,14 @@ export const overwrites: OverwritesForList = {
         'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984/logo.png',
     },
     '0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8': {
-      name: 'USD Coin',
+      symbol: 'USDC.e',
+      name: 'Bridged USDC',
+      logoURI:
+        'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png',
+    },
+    '0xaf88d065e77c8cC2239327C5EDb3A432268e5831': {
+      symbol: 'USDC',
+      name: 'USDC Coin',
       logoURI:
         'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png',
     },
@@ -278,4 +310,5 @@ export const overwrites: OverwritesForList = {
         'https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/0xba100000625a3754423978a60c9317c58a424e3d.png',
     },
   },
+  [Network.Zkevm]: {},
 }
